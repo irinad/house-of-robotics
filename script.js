@@ -11,20 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     setupFormHandler();
     setupScrollAnimations();
     setupMobileMenu();
+    setupPlaneAnimation();
 });
 
 // Initialize page settings
 function initializePage() {
-    // Set team photo
-    const teamPhoto = document.getElementById('teamPhoto');
-    if (teamPhoto) {
-        teamPhoto.src = CONFIG.teamPhotoPath;
-        teamPhoto.onerror = function() {
-            // If image doesn't exist, use a placeholder
-            this.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect fill="%2399CCCD" width="600" height="400"/><text x="50%" y="50%" font-size="24" fill="%23639B9A" text-anchor="middle" dominant-baseline="middle">Fotografie Echipă robo DIEM</text></svg>';
-        };
-    }
-    
     // Show/hide events section
     const eventsSection = document.getElementById('evenimente');
     const eventsNav = document.getElementById('events-nav');
@@ -63,18 +54,18 @@ function updateProgress() {
         // Path goes from Sibiu (right) to Long Beach (left)
         const t = percentage / 100; // normalize to 0-1
         
-        // Cubic bezier curve for more realistic transcontinental flight path
-        // This creates an arc that goes up and across like a great circle route
+        // Cubic bezier curve matching the red dots on plane-route.png
+        // Path goes from Sibiu, România (right) to Long Beach, California (left)
         
-        // Starting point (Sibiu - right side): x=88%, y=52%
-        // Control point 1 (over Atlantic): x=70%, y=25%
-        // Control point 2 (over Greenland/Arctic): x=30%, y=20%
-        // End point (Long Beach - left side): x=12%, y=48%
+        // Starting point (Sibiu, România - right red dot): x=90%, y=48%
+        // Control point 1 (over Atlantic): x=65%, y=30%
+        // Control point 2 (over North America): x=30%, y=25%
+        // End point (Long Beach, California - left red dot): x=15%, y=52%
         
-        const p0x = 88, p0y = 52;  // Start (Sibiu)
-        const p1x = 70, p1y = 25;  // Control 1 (Atlantic arc)
-        const p2x = 30, p2y = 20;  // Control 2 (Arctic arc)
-        const p3x = 12, p3y = 48;  // End (Long Beach)
+        const p0x = 90, p0y = 48;  // Start (Sibiu)
+        const p1x = 65, p1y = 30;  // Control 1 (Atlantic arc)
+        const p2x = 30, p2y = 25;  // Control 2 (North America arc)
+        const p3x = 15, p3y = 52;  // End (Long Beach)
         
         // Cubic Bezier formula: B(t) = (1-t)³P0 + 3(1-t)²tP1 + 3(1-t)t²P2 + t³P3
         const mt = 1 - t; // (1 - t)
@@ -84,7 +75,7 @@ function updateProgress() {
         const t3 = t2 * t;
         
         const x = mt3 * p0x + 3 * mt2 * t * p1x + 3 * mt * t2 * p2x + t3 * p3x;
-        const y = mt3 * p0y + 3 * mt2 * t * p1y + 3 * mt * t2 * p2y + t3 * p3y - 10;
+        const y = mt3 * p0y + 3 * mt2 * t * p1y + 3 * mt * t2 * p2y + t3 * p3y;
         
         planeContainer.style.left = x + '%';
         planeContainer.style.top = y + '%';
@@ -367,3 +358,21 @@ function setupMobileMenu() {
         });
     }
 }
+
+// Setup plane loop animation on click
+function setupPlaneAnimation() {
+    const planeIcon = document.querySelector('.plane-icon');
+    
+    if (planeIcon) {
+        planeIcon.addEventListener('click', function() {
+            // Add looping class
+            planeIcon.classList.add('looping');
+            
+            // Remove class after animation completes (1.5s)
+            setTimeout(function() {
+                planeIcon.classList.remove('looping');
+            }, 1500);
+        });
+    }
+}
+

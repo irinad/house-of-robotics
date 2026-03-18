@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>robo DIEM - Drumul spre Mondiale</title>
+    <title>robo DIEM - Drumul spre mondiale</title>
     <link rel="icon" type="image/jpeg" href="favicon-robo-diem.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
                 <!-- <span class="team-name">robo DIEM</span> -->
             </div>
             <div class="nav-right">
-                <!--<a href="#doneaza" class="btn-donate-nav">Donează</a> -->
+                <a href="#doneaza" class="btn-donate-nav">Donează</a>
                 <button class="hamburger" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -26,8 +26,8 @@
             <ul class="nav-menu">
                 <li><a href="#home">Acasă</a></li>
                 <li><a href="#despre">Despre Noi</a></li>
-                <!--<li><a href="#donatori">Donatori</a></li>
-                <li><a href="#evenimente" id="events-nav" style="display: none;">Evenimente</a></li>-->             
+                <li><a href="#donatori">Donatori</a></li>
+                <li><a href="#evenimente" id="events-nav" style="display: none;">Evenimente</a></li>             
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -40,7 +40,7 @@
                 <!-- <img src="cupe-lego.jpg" alt="Champions" class="club-logo"> -->
                 <h1>robo DIEM</h1>
                 <p class="slogan">Un parc arheologic interactiv construit de copii.<br>Un drum spre Mondiale construit de comunitate.</p>
-                <div class="hero-stats">
+                <!--<div class="hero-stats">
                     <div class="stat">
                         <div class="stat-label">Obiectiv</div>
                         <div class="stat-value">35,000 EUR</div>                        
@@ -53,43 +53,47 @@
                         <div class="stat-label">Oportunitate</div>
                         <div class="stat-value">Western Edge FLL Explore</div>                        
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
 
     <!-- Progress Tracker -->
-    <!--<section class="progress-section">
+    <section class="progress-section">
         <div class="container">
-            <h2>🌍 Drumul echipei spre mondiale</h2>
+            <h2><span class="emoji-icon">🌎</span> Drumul echipei spre mondiale</h2>
             <p class="progress-subtitle">Următoarea oprire: Long Beach, California</p>
             
             <div class="progress-map-container">
-                <div class="world-map-bg"> -->
+                <div class="world-map-bg">
+                    <!-- Flight path overlay -->
+                    <svg class="flight-path-overlay" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 90 48 C 65 30, 30 25, 15 52" class="flight-path-line" />
+                    </svg>
                     <!-- Plane on path -->
-                    <!--<div class="plane-container" id="planeContainer">
-                        <div class="plane-icon">✈️</div>
+                    <div class="plane-container" id="planeContainer">
+                        <img src="avion.png" alt="Plane" class="plane-icon">
                     </div>
                 </div>
             </div>
             
             <div class="progress-stats">
                 <div class="stat-card">
-                    <div class="stat-icon">💰</div>
+                    <div class="stat-icon"><img src="diamant.png" alt="Diamond"></div>
                     <div class="stat-content">
                         <div class="stat-label">Strâns până acum</div>
                         <div class="stat-value"><span id="amountRaised">0</span> EUR</div>
                     </div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-icon">🎯</div>
+                    <div class="stat-icon"><img src="cupa_la_tinta.png" alt="Trophy"></div>
                     <div class="stat-content">
                         <div class="stat-label">Progres</div>
                         <div class="stat-value"><span id="progressPercentage">0</span>%</div>
                     </div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-icon">🚀</div>
+                    <div class="stat-icon"><img src="tinta.png" alt="Target"></div>
                     <div class="stat-content">
                         <div class="stat-label">Obiectiv final</div>
                         <div class="stat-value">35,000 EUR</div>
@@ -97,18 +101,18 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Donation Options -->
-    <!-- <section id="doneaza" class="donation-section">
+    <section id="doneaza" class="donation-section">
         <div class="container">
-            <h2>Susține-ne în Drumul spre Mondiale</h2>
+            <h2>Susține-ne în drumul spre mondiale</h2>
             
-            <div class="donation-types"> -->
+            <div class="donation-types">
                 <!-- Individual Donations -->
-                 <!-- <div class="donation-type">
-                    <h3>Donații Individuale</h3>
-                    <p class="donation-subtitle">Avem 10.000 de kilometri de parcurs până la Long Beach. <br/> Fiecare donație duce echipa mai aproape de obiectiv!</p>
+                <div class="donation-type">
+                    <h3>Donații individuale</h3>
+                    <p class="donation-subtitle">Avem 10.400 de kilometri de parcurs până la Long Beach. <br/> Fiecare donație duce echipa mai aproape de obiectiv!</p>
                     
                     <div class="donation-tiers">
                         <div class="tier individual-tier">
@@ -130,86 +134,99 @@
                     </div>
                     
                     <button class="btn-donate" onclick="showIndividualDonation()">
-                        Donează Acum
+                        Donează acum
                     </button>
-                </div> --
+                </div>
                 
                 <!-- Company Sponsorships -->
-                <!-- <div class="donation-type">
-                    <h3>Sponsorizări Corporate</h3>
+                <div class="donation-type">
+                    <h3>Sponsorizări corporate</h3>
                     <p class="donation-subtitle">Ajută-ne să construim avionul!</p>
                     
                     <div class="donation-tiers">
                         <div class="tier company-tier">
-                            <div class="tier-badge">Nivel 1</div>
-                            <div class="tier-name">Primele Roțițe</div>
+                            <div class="tier-badge">Primele rotițe</div>
+                            <!--<div class="tier-name">Primele Rotițe</div>-->
                             <div class="tier-price">500+ EUR</div>
                             <ul class="tier-benefits">
-                                <li>Mențiuni în social media</li>
-                                <li>Mențiuni în comunicate de presă</li>
+                                <li>mențiuni în postările social media ale echipei</li>
+                                <li>mențiuni în comunicările din presa locală</li>
                             </ul>
                         </div>
                         
                         <div class="tier company-tier">
-                            <div class="tier-badge">Nivel 2</div>
-                            <div class="tier-name">Aripi</div>
+                            <div class="tier-badge">Aripa avionului</div>
+                            <!--<div class="tier-name">Aripi</div>-->
                             <div class="tier-price">1,500+ EUR</div>
                             <ul class="tier-benefits">
-                                <li>Logo pe tricoul echipei</li>
-                                <li>Mențiuni în social media</li>
-                                <li>Mențiuni în comunicate de presă</li>
-                                <li>Fotografie tipărită cu echipa</li>
+                                <li>logo pe tricoul echipei</li>
+                                <li>mențiuni social media și presă</li>
+                                <li>fotografie oficială (print) cu echipa și logo-ul companiei</li>
                             </ul>
                         </div>
                         
                         <div class="tier company-tier featured">
-                            <div class="tier-badge">Nivel 3</div>
-                            <div class="tier-name">Motoare</div>
+                            <div class="tier-badge">Motor</div>
+                            <!--<div class="tier-name">Motoare</div>-->
                             <div class="tier-price">3,000+ EUR</div>
                             <ul class="tier-benefits">
-                                <li>Logo mare pe tricoul echipei</li>
-                                <li>Logo pe standul de competiție</li>
-                                <li>Mențiuni în social media și presă</li>
-                                <li>Trofeu personalizat Lego</li>
-                                <li>Video de mulțumire de la echipă</li>
+                                <li>logo extins pe tricourile echipei</li>
+                                <li>logo pe standul expozițional al echipei</li>
+                                <li>mențiuni în social media și presă</li>
+                                <li>un trofeu LEGO personalizat, construit de echipă, pentru companie</li>
+                                <li>video de mulțumire, realizat de echipă, postat pe platformele de social media</li>
                             </ul>
                         </div>
                         
                         <div class="tier company-tier featured">
-                            <div class="tier-badge">Nivel 4</div>
-                            <div class="tier-name">Partener Cockpit</div>
+                            <div class="tier-badge">Cockpit Partner</div>
+                            <!--<div class="tier-name">Partener Cockpit</div>-->
                             <div class="tier-price">6,000+ EUR</div>
                             <ul class="tier-benefits">
-                                <li>Logo principal pe toate materialele</li>
-                                <li>Mențiuni în presă și social media</li>
-                                <li>Prezentare proiect la sediul companiei</li>
-                                <li>Trofeu personalizat Lego</li>
-                                <li>Workshop de robotică pentru angajați</li>
-                                <li>Parteneriat pe termen lung posibil</li>
+                                <li>logo principal pe materialele echipei (tricouri, stand, materiale vizuale)</li>
+                                <li>mențiuni în presă și comunicări social media</li>
+                                <li>video de mulțumire, realizat de echipă, postat pe platformele de social media</li>
+                                <li>posibilitatea prezentării proiectului și a machetei la sediul companiei</li>
+                                <li>trofeu LEGO personalizat, construit de echipă, pentru companie</li>
+                                <li>posibilitatea dezvoltării unui parteneriat educațional pe termen lung (ex. workshop
+STEM / Family Day pentru angajați)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tier company-tier">
+                            <div class="tier-badge">Personalizat</div>
+                            <!--<div class="tier-name">Aripi</div>-->
+                            <!--<div class="tier-price">1,500+ EUR</div>-->
+                            <ul class="tier-benefits">
+                                <li>Suntem deschiși și către forme personalizate de parteneriat, adaptate obiectivelor și
+inițiativelor de responsabilitate socială ale companiei.</li>
                             </ul>
                         </div>
                     </div>
                     
                     <button class="btn-donate btn-sponsor" onclick="showCompanySponsorship()">
-                        Devin Sponsor
+                        Devino sponsor
                     </button>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!-- About Section -->
     <section id="despre" class="about-section">
         <div class="container">
-            <h2>Despre Echipa robo DIEM</h2>
+            <h2>Despre echipa robo DIEM</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="team-placeholder.svg" alt="Echipa robo DIEM" id="teamPhoto">
+                    <img src="roboDIEM.jpg" alt="Echipa robo DIEM">
                 </div>
-                <div class="about-text">                   
+                <div class="about-text">
                     <p>Patru copii din Sibiu - David, Iris, Ema și Matei, membri ai echipei de robotică RoboDIEM - au reușit, pe 7 martie, o performanță remarcabilă: locul II la nivel național în competiția FIRST LEGO League România, desfășurată la București. Competiția a reunit 64 de echipe și peste 600 de participanți din întreaga țară.</p>
+                    
                     <p>Această performanță le-a adus calificarea la competiția internațională Western Edge - FIRST LEGO League, categoria Explore, care va avea loc în perioada 28 - 31 mai 2026, la Long Beach Convention Center, California, SUA.</p>
+                    
                     <p>La acest eveniment vor participa echipe din întreaga lume, iar echipa RoboDIEM va reprezenta România și orașul Sibiu, aducând pe scena internațională creativitatea, curajul și pasiunea pentru tehnologie ale unei noi generații.</p>
+                    
                     <p><strong>Vino alături de noi în această aventură extraordinară!</strong></p>
                 </div>
             </div>
@@ -217,39 +234,39 @@
     </section>
 
     <!-- Donors Section -->
-    <!--<section id="donatori" class="donors-section">
+    <section id="donatori" class="donors-section">
         <div class="container">
-            <h2>Mulțumim Sponsorilor Noștri!</h2>
+            <h2>Mulțumim sponsorilor noștri!</h2>
             <p class="section-subtitle">Companiile care ne susțin în drumul spre Long Beach</p>
             
-            <div id="donorsList" class="donors-grid">-->
+            <div id="donorsList" class="donors-grid">
                 <!-- Donors will be added here -->
-                <!--<div class="donor-placeholder">
+                <div class="donor-placeholder">
                     <p>Devino primul nostru sponsor și logo-ul tău va apărea aici!</p>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!-- Events Section -->
-    <!-- <section id="evenimente" class="events-section" style="display: none;">
+    <section id="evenimente" class="events-section" style="display: none;">
         <div class="container">
             <h2>Evenimente</h2>
-            <div id="eventsList" class="events-grid"> -->
+            <div id="eventsList" class="events-grid">
                 <!-- Events will be added here -->
-                <!--<div class="event-card">
+                <div class="event-card">
                     <div class="event-date">
                         <div class="event-day">15</div>
                         <div class="event-month">APR</div>
                     </div>
                     <div class="event-details">
-                        <h3>Exemplu Eveniment</h3>
+                        <h3>Exemplu eveniment</h3>
                         <p>Descriere eveniment - Location</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -270,12 +287,12 @@
                             <strong>Telefon</strong>
                             <a href="tel:+40744123456">+40 744 12 34 56</a>
                         </div>
-                    </div>-->
+                    </div> -->
                     <div class="contact-item">
                         <div class="contact-icon">👤</div>
                         <div class="contact-details">
                             <strong>Persoană de contact</strong>
-                            Monica Medeșan
+                            Monica Medeșan, Coordonator Echipă
                         </div>
                     </div>
                 </div>
@@ -288,7 +305,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <!--<img src="roboDIEM-logo-dark-background.png" alt="robo DIEM" class="footer-logo"> -->
+                    <!--  src="logo transp.png" alt="robo DIEM" class="footer-logo">-->
                     <p>robo DIEM - House of Robotics</p>
                 </div>
                 <div class="footer-links">
@@ -302,29 +319,29 @@
     <div id="individualModal" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal('individualModal')">&times;</span>
-            <h2>Donație Individuală</h2>
-            <p>Mulțumim pentru susținere! Pentru a dona, te rugăm să efectuezi transferul în contul:</p>
+            <h2>Donație individuală</h2>
+            <p>Hai cu noi în această călătorie! Donează la datele de mai jos:</p>
             
             <div class="bank-details">
                 <div class="bank-detail">
                     <strong>Beneficiar:</strong>
-                    <span>House of Robotics</span>
+                    <span>Asociația Mâini Unite</span>
                 </div>
                 <div class="bank-detail">
                     <strong>IBAN:</strong>
-                    <span>RO00 XXXX 0000 0000 0000 0000</span>
+                    <span>RO66BTRLRONCRT0CX2126106</span>
                 </div>
                 <div class="bank-detail">
                     <strong>Bancă:</strong>
-                    <span>[Numele Băncii]</span>
+                    <span>Banca Transilvania</span>
                 </div>
                 <div class="bank-detail">
                     <strong>Detalii transfer:</strong>
-                    <span>Donație robo DIEM - Long Beach</span>
+                    <span>roboDIEM la mondiale</span>
                 </div>
             </div>
             
-            <p class="modal-note">Te rugăm să ne trimiți confirmarea transferului la <a href="mailto:robotics.sibiu@gmail.com">robotics.sibiu@gmail.com</a></p>
+            <p class="modal-note">Ne-ar ajuta să ne trimiți confirmarea transferului la <a href="mailto:robotics.sibiu@gmail.com">robotics.sibiu@gmail.com</a></p>
         </div>
     </div>
 
@@ -332,7 +349,7 @@
     <div id="companyModal" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal('companyModal')">&times;</span>
-            <h2>Sponsorizare Corporate</h2>
+            <h2>Sponsorizare corporate</h2>
             <!-- <p>Mulțumim pentru interesul acordat! Completează formularul de mai jos:</p> -->
             
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJbUP0XurdyOnWRq5mx151qip2HG7_s6TIOqYEoIt3fnm-2g/viewform?embedded=true" width="420" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -342,7 +359,7 @@
             <div class="direct-contact">
                 <p><strong>Contactează-ne direct:</strong></p>
                 <p>📧 <a href="mailto:robotics.sibiu@gmail.com">robotics.sibiu@gmail.com</a></p>
-                <p>📱 <a href="tel:+40744123456">+40 744 12 34 56</a> - Monica</p>
+                <p>📱 <a href="tel:+40740196790">+40 740 196 790</a> - Monica Medeșan, Coordonator Echipă</p>
             </div>
         </div>
     </div>
