@@ -6,53 +6,24 @@ Website pentru campania de fundraising a echipei robo DIEM pentru participarea l
 
 ```
 robotics-fundraiser/
-├── backend/
-│   ├── server.js          # Backend server
-│   ├── package.json       # Backend dependencies
-│   └── .gitignore         # Backend git ignore
-├── index.html              # Main website
+├── index.html             # Main website
 ├── style.css              # Styling
 ├── script.js              # Frontend JavaScript
 ├── config.js              # Configuration (MODIFY HERE!)
 ├── logo-robo-diem.jpeg    # Logo echipă
 ├── logo-house-of-robotics.jpeg  # Logo club
 ├── favicon-robo-diem.jpg  # Favicon
-├── team-placeholder.svg   # Fotografie echipă (înlocuiește cu fotografia reală)
-├── sponsors.txt           # Fișier pentru date sponsori
 ├── config-examples.js     # Exemple de configurare
-├── QUICK-START.md         # Ghid rapid de utilizare
 └── README.md              # Acest fișier
 ```
 
 ## 🚀 Cum să folosești website-ul
 
-### Opțiunea 1: Client-Side Only (Simplu)
+### 1. Client-Side Only
 
-**Pentru prototipare rapidă sau hosting static:**
+**Pentru hosting static:**
 
-Deschide `index.html` direct în browser. Formularul de sponsor va descărca fișiere .txt local.
-
-### Opțiunea 2: Cu Backend Server (Recomandat)
-
-**Pentru funcționalitate completă cu salvare automată pe server:**
-
-#### Quick Start (Windows):
-Dublu-click pe `start-server.bat` și urmează instrucțiunile!
-
-#### Manual Start:
-```powershell
-cd backend
-npm install
-npm start
-```
-
-Apoi deschide: http://localhost:3000
-
-📚 **Ghid complet:** Vezi [BACKEND-SETUP.md](BACKEND-SETUP.md)
-
-### 1. Deschide website-ul
-
-Simplu deschide fișierul `index.html` într-un browser web (Chrome, Firefox, Edge, etc.)
+Deschide `index.html` direct în browser.
 
 ### 2. Actualizează progresul campaniei
 
@@ -73,16 +44,7 @@ const CONFIG = {
 
 Avionul se va deplasa automat de la Sibiu spre Long Beach pe măsură ce progresezi!
 
-### 3. Adaugă fotografia echipei
-
-- Înlocuiește fișierul `team-placeholder.jpg` cu o fotografie reală a echipei
-- SAU modifică în `config.js`:
-
-```javascript
-teamPhotoPath: "calea/catre/fotografie.jpg",
-```
-
-### 4. Actualizează detaliile bancare
+### 3. Actualizează detaliile bancare
 
 În `config.js`, secțiunea `bankDetails`:
 
@@ -95,7 +57,7 @@ bankDetails: {
 },
 ```
 
-### 5. Adaugă sponsori/donatori
+### 4. Adaugă sponsori/donatori
 
 În `config.js`, secțiunea `donors`:
 
@@ -115,7 +77,7 @@ donors: [
 ],
 ```
 
-### 6. Adaugă evenimente
+### 5. Adaugă evenimente
 
 #### Activează secțiunea evenimente:
 
@@ -152,16 +114,8 @@ Când cineva apasă "Donează Acum" la donații individuale, va vedea detaliile 
 
 #### Cu Backend (Recomandat):
 1. Compania completează formularul
-2. Datele sunt salvate automat în `sponsors.txt` pe server
-3. Primești datele în fișier, organizate și ușor de accesat
-4. (Opțional) Poți configura notificări email automate
+2. Datele sunt salvate în Google form responses
 
-#### Fără Backend:
-1. Când o companie completează formularul
-2. Browser-ul descarcă automat un fișier .txt cu datele
-3. Salvează fișierele descărcate pentru evidență
-
-📚 **Pentru configurare backend:** Vezi [BACKEND-SETUP.md](BACKEND-SETUP.md)
 
 ## 🎨 Personalizare
 
@@ -170,6 +124,7 @@ Culorile echipei sunt definite în `style.css`:
 - Primară: #639B9A
 - Secundară: #99CCCD
 - Întunecată: #333333
+- Accent cald: #FF8C61
 
 ### Modifică textul
 - Textul principal este în `index.html`
@@ -216,7 +171,6 @@ Website-ul este optimizat pentru:
 
 Pentru probleme sau întrebări:
 - Email: robotics.sibiu@gmail.com
-- Tel: +40 744 39 22 82 (Monica Medeșan)
 
 ## 📄 Licență
 
