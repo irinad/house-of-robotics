@@ -6,7 +6,7 @@
 // Campaign Settings
 const CONFIG = {
     // Current amount raised (in EUR)
-    amountRaised: 7000,
+    amountRaised: 0,
     
     // Total goal (in EUR)
     totalGoal: 35000,    
