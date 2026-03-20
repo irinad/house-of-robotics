@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>robo DIEM - Drumul spre mondiale</title>
+    <title>roboDIEM - Drumul spre mondiale</title>
     <link rel="icon" type="image/jpeg" href="favicon-robo-diem.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +12,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="logo-robo-diem.jpeg" alt="robo DIEM" class="logo">
-                <!-- <span class="team-name">robo DIEM</span> -->
+                <img src="logo-robo-diem.jpeg" alt="roboDIEM" class="logo">
+                <!-- <span class="team-name">roboDIEM</span> -->
             </div>
             <div class="nav-right">
                 <div class="language-switcher">
@@ -38,12 +38,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
+    <!--<header id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <!-- <img src="cupe-lego.jpg" alt="Champions" class="club-logo"> -->
-                <h1>robo DIEM</h1>
-                <p class="slogan" data-i18n="hero.slogan">Un parc arheologic interactiv construit de copii.<br>Un drum spre Mondiale construit de comunitate.</p>
+            <div class="hero-content">-->
+                <!--<h1>robo DIEM</h1>
+                <p class="slogan" data-i18n="hero.slogan">Un parc arheologic interactiv construit de copii.<br>Un drum spre Mondiale construit de comunitate.</p>-->
                 <!--<div class="hero-stats">
                     <div class="stat">
                         <div class="stat-label">Obiectiv</div>
@@ -58,16 +57,13 @@
                         <div class="stat-value">Western Edge FLL Explore</div>                        
                     </div>
                 </div>-->
-            </div>
+            <!--</div>
         </div>
-    </header>
+    </header>-->
 
     <!-- Progress Tracker -->
-    <section class="progress-section">
-        <div class="container">
-            <h2><span class="emoji-icon">🌎</span> <span data-i18n="progress.heading">Drumul echipei spre mondiale</span></h2>
-            <p class="progress-subtitle" data-i18n="progress.subtitle">Următoarea oprire: Long Beach, California</p>
-            
+    <section id="home" class="progress-section">
+        <div class="container">          
             <div class="progress-map-container">
                 <div class="world-map-bg">
                     <!-- Flight path overlay -->
@@ -80,6 +76,9 @@
                     </div>
                 </div>
             </div>
+
+            <h2><span data-i18n="progress.heading">Drumul echipei roboDIEM spre mondiale</span></h2>
+            <p class="progress-subtitle" data-i18n="progress.subtitle">Următoarea oprire: Long Beach, California</p>
             
             <div class="progress-stats">
                 <div class="stat-card">
@@ -107,10 +106,19 @@
         </div>
     </section>
 
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="slogan" data-i18n="hero.slogan">Un parc arheologic interactiv construit de copii.<br>Un drum spre Mondiale construit de comunitate.</p>              
+            </div>
+        </div>
+    </header>
+
     <!-- Donation Options -->
     <section id="doneaza" class="donation-section">
         <div class="container">
-            <h2 data-i18n="donation.heading">Susține-ne în drumul spre mondiale</h2>
+            <h2 data-i18n="donation.heading">Investește în performanță, susține echipa spre mondiale!</h2>
             
             <div class="donation-types">
                 <!-- Individual Donations -->
@@ -199,8 +207,6 @@ STEM / Family Day pentru angajați)</li>
 
                         <div class="tier company-tier">
                             <div class="tier-badge" data-i18n="tier.custom.badge">Personalizat</div>
-                            <!--<div class="tier-name">Aripi</div>-->
-                            <!--<div class="tier-price">1,500+ EUR</div>-->
                             <ul class="tier-benefits">
                                 <li data-i18n="tier.custom.benefit1">Suntem deschiși și către forme personalizate de parteneriat, adaptate obiectivelor și
 inițiativelor de responsabilitate socială ale companiei.</li>
@@ -208,7 +214,7 @@ inițiativelor de responsabilitate socială ale companiei.</li>
                         </div>
                     </div>
                     
-                    <button class="btn-donate btn-sponsor" onclick="showCompanySponsorship()" data-i18n="donation.corporate.button">
+                    <button class="btn-donate" onclick="showCompanySponsorship()" data-i18n="donation.corporate.button">
                         Devino sponsor
                     </button>
                 </div>
@@ -231,7 +237,19 @@ inițiativelor de responsabilitate socială ale companiei.</li>
                     
                     <p data-i18n="about.p3">La acest eveniment vor participa echipe din întreaga lume, iar echipa RoboDIEM va reprezenta România și orașul Sibiu, aducând pe scena internațională creativitatea, curajul și pasiunea pentru tehnologie ale unei noi generații.</p>
                     
+                    <!--<p><strong data-i18n="about.p4">Vino alături de noi în această aventură extraordinară!</strong></p>-->
+                </div>
+            </div>
+            <div class="about-content">                
+                <div class="about-text">
+                    <p data-i18n="about.p5">Participarea la această etapă reprezintă o oportunitate educațională extraordinară, dar implică și un efort logistic și financiar semnificativ pentru clubul House of Robotics, cadru în care atât coordonatorul, cât și părinții copiilor se implică voluntar.</p>
+                    
+                    <p data-i18n="about.p6">Pentru a transforma această oportunitate în realitate, avem nevoie de implicarea comunității noastre - o comunitate care a demonstrat, de fiecare dată, că știe să se mobilizeze pentru cauze care îi dau sens și identitate.</p>
+                    
                     <p><strong data-i18n="about.p4">Vino alături de noi în această aventură extraordinară!</strong></p>
+                </div>
+                <div class="about-image">
+                    <img src="invest.jpg" alt="Investește în viitor">
                 </div>
             </div>
         </div>
@@ -274,8 +292,15 @@ inițiativelor de responsabilitate socială ale companiei.</li>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+        <header class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="slogan" data-i18n="contact.heading">Contact</p>              
+                </div>
+            </div>
+        </header>
         <div class="container">
-            <h2 data-i18n="contact.heading">Contact</h2>
+            <!--<h2 data-i18n="contact.heading">Contact</h2>-->
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
