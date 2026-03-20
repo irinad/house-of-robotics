@@ -178,13 +178,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
-    padding: 2rem 0;
     text-align: center;
     position: relative;
 }
 
 .hero-content {
-    padding: 2rem 0;
+    padding: 0.5rem 0;
     position: relative;
     z-index: 1;
 }
@@ -203,7 +202,6 @@ body {
 
 .slogan {
     font-size: 1.4rem;
-    margin-bottom: 2rem;
     font-style: italic;
     line-height: 1.8;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -241,11 +239,11 @@ body {
 
 /* Progress Section */
 /* Progress Section - World Map Style */
-.progress-section {
-    padding: 4rem 0;
+.progress-section {    
     background: linear-gradient(180deg, #f5f9f9 0%, #ffffff 100%);
     position: relative;
     overflow: hidden;
+    padding-bottom: 2rem;
 }
 
 .progress-section::before {
@@ -271,13 +269,6 @@ body {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
-}
-
-.progress-section h2 .emoji-icon {
-    -webkit-text-fill-color: initial;
-    background: none;
-    -webkit-background-clip: initial;
-    background-clip: initial;
 }
 
 .progress-subtitle {
@@ -790,7 +781,6 @@ body {
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 0;
     background-color: var(--white);
 }
 
@@ -805,6 +795,7 @@ body {
 }
 
 .contact-content {
+    padding: 2rem 0;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -883,25 +874,25 @@ body {
 }
 
 .social-badge.facebook {
-    background-color: #1877F2;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-teal));
     color: white;
 }
 
 .social-badge.facebook:hover {
-    background-color: #0d65d9;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+    box-shadow: 0 4px 12px rgba(99, 155, 154, 0.4);
 }
 
 .social-badge.instagram {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-warm));
     color: white;
 }
 
 .social-badge.instagram:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-warm));
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(188, 24, 136, 0.4);
-    filter: brightness(1.1);
+    box-shadow: 0 4px 12px rgba(255, 140, 97, 0.4);
 }
 
 /* Footer */
@@ -1212,13 +1203,13 @@ body {
         padding: 0 1.5rem;
     }
     
-    .hero-content {
+    /*.hero-content {
         padding: 1.5rem 0;
     }
     
     .hero {
         padding: 1.5rem 0;
-    }
+    }*/
     
     .hero-stats {
         flex-direction: column;

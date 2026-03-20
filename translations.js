@@ -16,14 +16,14 @@ const translations = {
         'hero.slogan': 'Un parc arheologic interactiv construit de copii.<br>Un drum spre Mondiale construit de comunitate.',
         
         // Progress Section
-        'progress.heading': 'Drumul echipei spre mondiale',
+        'progress.heading': 'Drumul echipei roboDIEM spre mondiale',
         'progress.subtitle': 'Următoarea oprire: Western Edge, Long Beach, California',
         'progress.raised': 'Strâns până acum',
         'progress.progress': 'Progres',
         'progress.goal': 'Obiectiv final',
         
         // Donation Section
-        'donation.heading': 'Susține-ne în drumul spre mondiale',
+        'donation.heading': 'Investește în performanță, susține echipa spre mondiale!',
         'donation.individual.title': 'Donații individuale',
         'donation.individual.subtitle': 'Avem 10.400 de kilometri de parcurs până la Long Beach. <br/> Fiecare donație duce echipa mai aproape de obiectiv!',
         'donation.individual.button': 'Donează acum',
@@ -115,14 +115,14 @@ const translations = {
         'hero.slogan': 'An interactive archaeological park built by children.<br>A road to the World Championship built by the community.',
         
         // Progress Section
-        'progress.heading': 'The Team\'s Road to the World Championship',
+        'progress.heading': 'roboDIEM\'s Road to the World Championship',
         'progress.subtitle': 'Next stop: Western Edge, Long Beach, California',
         'progress.raised': 'Raised so far',
         'progress.progress': 'Progress',
         'progress.goal': 'Final Goal',
         
         // Donation Section
-        'donation.heading': 'Support us on our road to the World Championship',
+        'donation.heading': 'Invest in performance, support our journey to the World Championship!',
         'donation.individual.title': 'Individual Donations',
         'donation.individual.subtitle': 'We have 10,400 kilometers to travel to Long Beach. <br/> Every donation brings the team closer to the goal!',
         'donation.individual.button': 'Donate now',
