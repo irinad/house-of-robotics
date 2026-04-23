@@ -94,6 +94,15 @@ function loadDonors() {
             const donorCard = document.createElement('div');
             donorCard.className = 'donor-card';
             
+            // Add clickable class if donor has a link
+            if (donor.link) {
+                donorCard.classList.add('donor-card-clickable');
+                donorCard.style.cursor = 'pointer';
+                donorCard.addEventListener('click', () => {
+                    window.open(donor.link, '_blank', 'noopener,noreferrer');
+                });
+            }
+            
             let logoHTML = '';
             if (donor.logoPath) {
                 logoHTML = `<img src="${donor.logoPath}" alt="${donor.name}" class="donor-logo">`;

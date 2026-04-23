@@ -6,7 +6,7 @@
 // Campaign Settings
 const CONFIG = {
     // Current amount raised (in EUR)
-    amountRaised: 0,
+    amountRaised: 11560,
     
     // Total goal (in EUR)
     totalGoal: 35000,    
@@ -25,11 +25,24 @@ const CONFIG = {
     // Donors/Sponsors List
     // Add company sponsors here
     donors: [
+        {
+            name: "HMS Networks",
+            tier: "Nivel 1 - Primele Roțițe",
+            logoPath: "assets/sponsors/hms_logo.png",
+            link: "https://www.hms-networks.com/"
+        },
+        {
+            name: "Ramada Sibiu",
+            tier: "Nivel 3 - Motor",
+            logoPath: "assets/sponsors/ramada.webp",
+            link: "https://www.wyndhamhotels.com/ramada/sibiu-romania/ramada-sibiu/overview"
+        }
         // Example:
         // {
         //     name: "Company Name",
         //     tier: "Nivel 1 - Primele Roțițe",
-        //     logoPath: "path/to/logo.png"
+        //     logoPath: "path/to/logo.png",
+        //     link: "https://example.com" // Optional: clicking the card opens this link
         // }
     ],
     
