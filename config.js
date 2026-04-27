@@ -26,17 +26,42 @@ const CONFIG = {
     // Add company sponsors here
     donors: [
         {
-            name: "HMS Networks",
-            tier: "Nivel 1 - Primele Roțițe",
-            logoPath: "assets/sponsors/hms_logo.png",
-            link: "https://www.hms-networks.com/"
+            name: "Ramada Sibiu",
+            //tier: "Motor",
+            logoPath: "assets/sponsors/ramada_logo.png",
+            link: "https://www.wyndhamhotels.com/ramada/sibiu-romania/ramada-sibiu/overview"
         },
         {
-            name: "Ramada Sibiu",
-            tier: "Nivel 3 - Motor",
-            logoPath: "assets/sponsors/ramada.webp",
-            link: "https://www.wyndhamhotels.com/ramada/sibiu-romania/ramada-sibiu/overview"
+            name: "IT Perspectives",
+            //tier: "Motor",
+            logoPath: "assets/sponsors/itp_logo.png",
+            link: "https://www.itperspectives.com/"
+        },
+        {
+            name: "Tello",
+            //tier: "Motor",
+            logoPath: "assets/sponsors/tello_logo.png",
+            link: "https://www.tello.com/"
+        },
+        {
+            name: "Mâini Unite",
+            //tier: "Motor",
+            logoPath: "assets/sponsors/maini_unite_logo.png",
+            link: "https://www.facebook.com/MainiUnite/"
+        },
+        {
+            name: "Rotary Sibiu",
+            //tier: "Motor",
+            logoPath: "assets/sponsors/rotary_logo.png",
+            link: "https://www.facebook.com/RotaryClubSibiu/"
+        },
+        {
+            name: "HMS Networks",
+            //tier: "Primele Roțițe",
+            logoPath: "assets/sponsors/hms_logo.png",
+            link: "https://www.hms-networks.com/"
         }
+        
         // Example:
         // {
         //     name: "Company Name",
