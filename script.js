@@ -110,9 +110,10 @@ function loadDonors() {
             
             donorCard.innerHTML = `
                 ${logoHTML}
-                <div class="donor-name">${donor.name}</div>
-                <div class="donor-tier">${donor.tier}</div>
+                <div class="donor-name">${donor.name}</div>                
             `;
+
+            //<div class="donor-tier">${donor.tier}</div>
             
             donorsList.appendChild(donorCard);
         });
